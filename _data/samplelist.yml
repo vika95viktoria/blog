@@ -1,0 +1,11 @@
+docs_list_title: Последние заметки
+docs:
+
+- title: Мексика
+  url: Mexico.html
+
+- title: Голос
+  url: Voice.html
+
+- title: Всякое
+  url: Other.html
