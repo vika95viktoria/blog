@@ -2,7 +2,7 @@
 <ul>
    {% for item in site.data.samplelist.docs %}
       <li><a href="{{ item.url }}">	  ![Page preview]({{ item.layout }})  </a></li>
-]
+
    {% endfor %}
 </ul>
 
