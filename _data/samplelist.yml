@@ -3,9 +3,12 @@ docs:
 
 - title: Мексика
   url: Mexico.html
+  layout: /photos/mexico.jpg
 
 - title: Голос
   url: Voice.html
+  layout: /photos/golos-kraini-2018.jpg
 
 - title: Всякое
   url: Other.html
+  layout: /photos/life.jpg
