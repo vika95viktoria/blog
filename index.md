@@ -5,3 +5,6 @@
 	  ![Page preview]({{ item.layout }}) 
    {% endfor %}
 </ul>
+
+
+![Page preview](/photos/mexico.jpg)
