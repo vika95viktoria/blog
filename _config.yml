@@ -1,0 +1,25 @@
+title:              Viktoryia Khlystun
+email:              vika95vika@gmail.com
+description:        Заметки обо всем на свете
+author:             Viktoryia Khlystun
+baseurl:            ""
+url:                "https://startbootstrap.github.io"
+
+# Social Profiles
+twitter_username:   
+github_username:    vika95viktoria
+facebook_username:  
+instagram_username:  vika_khlystun
+linkedin_username:
+
+# Add your google-analytics ID here to activate google analytics
+google_analytics:   UA-XXXXXXXXX-X # out your google-analytics code
+
+# Build settings
+markdown:           kramdown
+paginate:           5
+paginate_path:      "/posts/page:num/"
+plugins:
+  - jekyll-feed
+  - jekyll-paginate
+  - jekyll-sitemap ## Uncomment this line to silently generate a sitemaps.org compliant sitemap for your Jekyll site
