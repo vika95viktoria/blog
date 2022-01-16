@@ -2,8 +2,8 @@ title:              Viktoryia Khlystun
 email:              vika95vika@gmail.com
 description:        Заметки обо всем на свете
 author:             Viktoryia Khlystun
-baseurl:            ""
-url:                "https://startbootstrap.github.io"
+baseurl:            "/blog"
+url:                "https://vika95viktoria.github.io/blog/"
 
 # Social Profiles
 twitter_username:   
