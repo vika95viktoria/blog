@@ -1,33 +1,29 @@
 <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
 <script src="{{"/assets/vendor/startbootstrap-clean-blog/js/scripts.js" | relative_url }}"></script>
+<script src="{{"/assets/lightbox.js" | relative_url }}"></script>
 
 <script src="{{"/assets/scripts.js" | relative_url }}"></script>
-<script src="{{"/assets/lightense.js" | relative_url }}"></script>
+<script src="{{"/assets/photoswipe-lightbox.esm.js" | relative_url }}"></script>
+<script src="{{"/assets/photoswipe.esm.js" | relative_url }}"></script>
 
-<script>
-window.onload = function() {
-  Lightense("img:not(.no-lightense),.lightense", {
 
-    // Example: Event Hooks
-    beforeShow(config) {
-      var beforeShowAttr = config.target.getAttribute("before-show-alert");
-      beforeShowAttr && alert(beforeShowAttr);
-    },
-    afterShow(config) {
-      var afterShowAttr = config.target.getAttribute("after-show-alert");
-      afterShowAttr && alert(afterShowAttr);
-    },
-    beforeHide(config) {
-      var beforeHideMessage = config.target.getAttribute("before-hide-alert");
-      beforeHideMessage && alert(beforeHideMessage);
-    },
-    afterHide(config) {
-      var afterHideMessage = config.target.getAttribute("after-hide-alert");
-      afterHideMessage && alert(afterHideMessage);
-    }
-  });
-}
+<script type="module">
+import PhotoSwipeLightbox from '{{"/assets/photoswipe-lightbox.esm.js" | relative_url }}';
+
+const lightbox = new PhotoSwipeLightbox({
+  // may select multiple "galleries"
+  gallery: '.pswp-gallery',
+  
+  imageClickAction: 'close',
+
+  // Elements within gallery (slides)
+  children: 'a',
+
+  // setup PhotoSwipe Core dynamic import
+  pswpModule: () => import('{{"/assets/photoswipe.esm.js" | relative_url }}')
+});
+lightbox.init();
 </script>
 
 {% if page.url contains 'contact' %}
