@@ -7,6 +7,21 @@ background: '/img/posts/rijschool/cars_dramatic.webp'
 ---
 <style>
 
+    .image-container {
+    width: 100%; /* Full width of its parent */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* Ensures no unwanted cropping */
+}
+
+.image-container img {
+    width: 100%; /* Fully responsive */
+    max-width: 100%; /* Prevents exceeding natural size */
+    height: auto; /* Maintains aspect ratio */
+    border-radius: 10px; /* Optional rounded corners */
+}
+
      .small-image {
     max-width: 400px; /* Adjust as needed */
     height: auto; /* Maintain aspect ratio */
@@ -334,7 +349,7 @@ background: '/img/posts/rijschool/cars_dramatic.webp'
 На подготовку к теоретическому экзамену у меня ушло 2 месяца, в общей сложности 31 час чистого времени. Я занималась практически ежедневно: делала карточки в Анки, прогоняла их и прорешивала вопросы по разделам на сайте. Когда в большинстве разделов набралось хотя бы по 80% начала делать пробные экзамены, а параллельно смотрела видео на ютубе для закрепления материала. В Амстердаме была ожидаемо большая очередь(1.5 месяца) для сдачи теории, так что я скаталась в соседний Хаарлем и благополучно все сдала с первого раза.
 </p>
 
-            <div class="d-flex justify-content-center">
+            <div class="image-container">
 
    <div>
       <img src="{{"/img/posts/rijschool/theorie_test.PNG" | relative_url}}" alt="" class="medium-image"  />
@@ -358,7 +373,7 @@ background: '/img/posts/rijschool/cars_dramatic.webp'
 </p>
 
 
-            <div class="d-flex justify-content-center">
+            <div class="image-container">
 
    <div>
       <img src="{{"/img/posts/rijschool/speed_bump.jpg" | relative_url}}" alt=""  class="medium-image" />
