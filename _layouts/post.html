@@ -2,6 +2,39 @@
 layout: default
 ---
 
+<style>
+  /* ── Cusdis comment box: tidy sizing ───────────────────────────── */
+
+/* 1. Let the wrapper size itself naturally */
+#cusdis_thread {
+  height: auto !important;     /* scrap the 100% rule */
+  overflow: visible !important;
+}
+
+/* 2. Give the iframe a modest base height but let Cusdis resize it */
+#cusdis_thread iframe {
+  display: block;              /* removes inline gap */
+  width: 100% !important;
+
+  /* ↓ tweak this to taste: just high enough to avoid a scrollbar when
+     there are zero comments; small enough not to look empty          */
+  min-height: 320px !important;
+
+  /* cap it so it never grows beyond the viewport */
+  max-height: 90vh !important;
+
+  border: none;
+}
+
+/* 3. Optional: slightly smaller on phones */
+@media (max-width: 600px) {
+  #cusdis_thread iframe {
+    min-height: 260px;
+  }
+}
+
+</style>
+
 <!-- Page Header -->
 {% if page.background %}
 <header class="masthead" style="background-image: url('{{ page.background | prepend: site.baseurl | replace: '//', '/' }}')">
