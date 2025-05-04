@@ -4,7 +4,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
   <title>
-    {% if page.title %}{{ page.title | escape }} - {{ site.title | escape }}
+    {% if page.post_title %}{{ page.post_title | escape }} - {{ site.title | escape }}
     {% else %}{{ site.title | escape }}{% endif %}
   </title>
 
@@ -20,7 +20,6 @@
 
   <link rel="stylesheet" href="{{"/assets/main.css" | relative_url }}">
   <link rel="stylesheet" href="{{"/assets/photoswipe.css" | relative_url }}" />
-  <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
   <link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }}" href="{{ "/feed.xml" | relative_url }}">
   
   <meta name="google-site-verification" content="UhYBjK6kXO7sexSR9aj0xvbzbSZkf1exIIXICEXwP-8" />

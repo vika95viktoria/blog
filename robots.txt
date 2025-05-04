@@ -1,0 +1,6 @@
+# robots.txt — static version
+User-agent: *
+Allow: /
+
+# Point crawlers to your sitemap
+Sitemap: https://vika95viktoria.github.io/blog/sitemap.xml
