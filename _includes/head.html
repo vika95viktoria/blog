@@ -20,6 +20,13 @@
 
   <link rel="stylesheet" href="{{"/assets/main.css" | relative_url }}">
   <link rel="stylesheet" href="{{"/assets/photoswipe.css" | relative_url }}" />
+
+  <link rel="icon" href="{{ "/img/site_icon.png" | relative_url }}" type="image/x-icon" />
+
+  <meta property="og:title" content="{{ page.post_title }}" />
+  <meta property="og:description" content="{{ page.description }}" />
+  <meta property="og:image" content="{{ '/img/site_icon.png' | relative_url }}" />
+  <meta property="og:url" content="{{ site.url }}" />
   
   <meta name="google-site-verification" content="UhYBjK6kXO7sexSR9aj0xvbzbSZkf1exIIXICEXwP-8" />
 
