@@ -48,6 +48,16 @@ comments: true
     }
 }
 
+.image-container, .vertical-image-container {
+    cursor: pointer;
+}
+
+.image-container img:hover, .vertical-image-container img:hover {
+    opacity: 0.9;
+    transition: opacity 0.3s ease-in-out;
+}
+
+
 </style>
 
 <p>
@@ -55,14 +65,17 @@ comments: true
 
 </p>
 
-<div class="image-container">
 
-   <div>
-      <img src="{{"/img/posts/nvdv/nvdv_main_image.jpg" | relative_url}}" alt="Nacht van de Vlugteling"  class="medium-image" />
+
+
+<div class="image-container">
+  <div>
+    <a href="{{ "/img/posts/nvdv/nvdv_main_image.jpg" | relative_url }}" data-lightbox="nvdv" data-title="Этим меня и заманили">
+      <img src="{{ "/img/posts/nvdv/nvdv_main_image.jpg" | relative_url }}" alt="Nacht van de Vlugteling" class="medium-image" />
     </a>
   </div>
-  </div>
- <span class="caption text-muted">Этим меня и заманили</span>
+</div>
+<span class="caption text-muted">Этим меня и заманили</span>
 
 <p>
     Дословный перевод <i>Nacht van de Vlugteling</i> - это Ночь Беженца, и это благотворительное мероприятие под эгидой голландской организации Stichting Vluchteling, которая занимается помощью беженцам по всему миру. Начиная с 2010 года они проводят Ночь Беженца в большинстве крупных городов Нидерландов, чтобы “привлечь внимание к забытому, но не теряющему актуальности кризису” и собрать средства на свою деятельность.
@@ -87,8 +100,9 @@ comments: true
 
 <div class="image-container">
 
-   <div>
-      <img src="{{"/img/posts/nvdv/route.PNG" | relative_url}}" alt="Маршрут ночной прогулки"  class="medium-image" />
+      <div>
+    <a href="{{ "/img/posts/nvdv/route.PNG" | relative_url }}" data-lightbox="nvdv" data-title="Маршрут ночной прогулки">
+      <img src="{{ "/img/posts/nvdv/route.PNG" | relative_url }}" alt="Маршрут ночной прогулки" class="medium-image" />
     </a>
   </div>
   </div>
@@ -105,10 +119,13 @@ comments: true
 
 <div class="vertical-image-container">
 
-   <div>
-      <img src="{{"/img/posts/nvdv/me_start.jpg" | relative_url}}" alt="Начало прогулки"  class="small-image" />
+     <div>
+    <a href="{{"/img/posts/nvdv/me_start.jpg" | relative_url}}" data-lightbox="nvdv" data-title="Начало прогулки">
+      <img src="{{"/img/posts/nvdv/me_start_full.jpg" | relative_url}}" alt="Начало прогулки" class="small-image" />
     </a>
   </div>
+
+
   </div>
  <span class="caption text-muted">Приоделась по случаю</span>
 
@@ -118,10 +135,12 @@ comments: true
 
 <div class="image-container">
 
-   <div>
-      <img src="{{"/img/posts/nvdv/arrow.jpg" | relative_url}}" alt="Указатели на маршруте"  class="medium-image" />
+     <div>
+    <a href="{{ "/img/posts/nvdv/arrow.jpg" | relative_url }}" data-lightbox="nvdv" data-title="Указатели на маршруте">
+      <img src="{{ "/img/posts/nvdv/arrow_full.jpg" | relative_url }}" alt="Указатели на маршруте" class="medium-image" />
     </a>
   </div>
+
   </div>
  <span class="caption text-muted">Указатели на маршруте</span>
 
@@ -140,8 +159,9 @@ comments: true
 
 <div class="vertical-image-container">
 
-   <div>
-      <img src="{{"/img/posts/nvdv/halfway.jpg" | relative_url}}" alt="Середина прогулки"  class="small-image" />
+         <div>
+    <a href="{{ "/img/posts/nvdv/halfway.jpg" | relative_url }}" data-lightbox="nvdv" data-title="Середина прогулки">
+      <img src="{{ "/img/posts/nvdv/halfway_full.jpg" | relative_url }}" alt="Середина прогулки" class="small-image" />
     </a>
   </div>
   </div>
@@ -153,19 +173,23 @@ comments: true
 
 <div class="image-container">
 
-   <div>
-      <img src="{{"/img/posts/nvdv/field_1.jpg" | relative_url}}" alt="Пейзаж на маршруте"  class="medium-image" />
+    <div>
+    <a href="{{ "/img/posts/nvdv/field_1.jpg" | relative_url }}" data-lightbox="nvdv" data-title="Пейзаж на маршруте">
+      <img src="{{ "/img/posts/nvdv/field_1_full.jpg" | relative_url }}" alt="Пейзаж на маршруте" class="medium-image" />
     </a>
   </div>
+
   </div>
  <span class="caption text-muted">Место, где внезапно можно найти покой, умиротворение и слияние с бесконечно вечным</span>
 
 <div class="image-container">
 
-   <div>
-      <img src="{{"/img/posts/nvdv/me_field.jpg" | relative_url}}" alt="Прохождение маршрута"  class="medium-image" />
+        <div>
+    <a href="{{ "/img/posts/nvdv/me_field.jpg" | relative_url }}" data-lightbox="nvdv" data-title="Прохождение маршрута">
+      <img src="{{ "/img/posts/nvdv/me_field_full.jpg" | relative_url }}" alt="Прохождение маршрута" class="medium-image" />
     </a>
   </div>
+
   </div>
  <span class="caption text-muted">Когда не по-детски вштырило от поля</span>
 
@@ -183,13 +207,20 @@ comments: true
 
 <div class="col-lg-6 col-md-4 col-xs-4 ">
 
-
-        <img class="img-fluid" decoding="async" loading="lazy" src="{{ "/img/posts/nvdv/me_een_kilometer.jpg" | relative_url}}"  alt="Последний километр Nacht van de Vlugteling">
+            <div>
+    <a href="{{ "/img/posts/nvdv/me_een_kilometer.jpg" | relative_url}}" data-lightbox="nvdv" data-title="Последний километр Nacht van de Vlugteling">
+      <img class="img-fluid" decoding="async" loading="lazy" src="{{ "/img/posts/nvdv/me_een_kilometer_full.jpg" | relative_url }}" alt="Последний километр Nacht van de Vlugteling" class="small-image" />
+    </a>
+  </div>
 
 </div>
 <div class="col-lg-6 col-md-4 col-xs-4 ">
 
-        <img class="img-fluid" decoding="async" loading="lazy" src="{{"/img/posts/nvdv/me_medal.jpg" | relative_url}}" alt="Финиш и медаль">
+                <div>
+    <a href="{{ "/img/posts/nvdv/me_medal.jpg" | relative_url}}" data-lightbox="nvdv" data-title="Финиш и медаль">
+      <img class="img-fluid" decoding="async" loading="lazy" src="{{ "/img/posts/nvdv/me_medal_full.jpg" | relative_url }}" alt="Финиш и медаль" class="small-image" />
+    </a>
+  </div>
 
 </div>
 
@@ -201,3 +232,4 @@ comments: true
     <b>Итог:</b> +219 евро на помощь беженцами силами меня и моих коллег, + 1 увлекательная история в копилку и окончательное понимание, что я <del>все-таки ебнулась</del> та еще авантюристка 😆
 В следующем году планирую снова идти, но уже по какому-нибудь другому маршруту. Присоединяйтесь!
 </p>
+
