@@ -17,6 +17,7 @@ comments: true
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 10px;
     overflow: hidden; /* Ensures no unwanted cropping */
 }
 
@@ -24,20 +25,20 @@ comments: true
     width: 100%; /* Fully responsive */
     max-width: 100%; /* Prevents exceeding natural size */
     height: auto; /* Maintains aspect ratio */
-    margin-bottom: 10px;
-    margin-left: 5px;
-    margin-right: 5px;
+    border-radius: 10px; /* Optional rounded corners */
 }
 
-.vertical-image-container div {
-  margin-left: 5px;
-  margin-right: 5px;  /* Add margin between images */
+.gallery-row{
+  display:flex;         /* turns on flexbox */
+  flex-direction:column;/* column flow  ➜ one on top of the other */
+  gap:12px;             /* space between the two blocks */
+  align-items:center;   /* (optional) centre them horizontally */
 }
 
 .vertical-image-container img {
     width: 100%;
     height: auto;
-    margin-bottom: 10px;
+    border-radius: 10px;
 }
 
 
@@ -89,6 +90,7 @@ comments: true
     <i>“Ну могла, конечно. Но мы ж в поход уже пару лет хотели, забыла?”</i> - отвечаю я мысленно. После всех страхов первого дня бытовые неудобства вроде мытья в тазике и похода в туалет с совочком меня заботят меньше всего. Как мне пережить оставшиеся 5 дней - вот что меня реально волнует! Если все продолжится в том же духе, то домой я вернусь или сильно обеднев после эвакуации вертолетом, или сильно поседев.
 </p>
 
+<div class="gallery-row">
 <div class="image-container">
   <div>
     <a href="{{ "/img/posts/africa/full/drkensberg_general_2.jpg" | relative_url }}" data-lightbox="africa" data-title="Вид горной гряды Дракенсберг">
@@ -97,7 +99,7 @@ comments: true
   </div>
 </div>
 <span class="caption text-muted">Добро пожаловать в ЮАР</span>
-
+</div>
 <p>
     Очевидная, но не приходившая мне в голову деталь: в походе твой день заканчивается с закатом солнца. В ЮАР в начале марта это означает, что уже к семи — полная темень, и, если нет желания тратить драгоценную батарею телефона, то, как заправский детсадовец, к этому времени ты уже в кроватке. Хотя более уместным сравнением будет: «неустанно ворочаешься в спальнике, как Аристотель в гробу после того, как услышал об Обществе плоской Земли». После комфортной городской жизни не стоит даже мечтать о хорошем сне в первую ночь вне цивилизации.
 </p>
@@ -123,13 +125,14 @@ comments: true
 <p>
     Мда, незадача. Но я атаковала страх с нескольких фронтов: записалась в тренажерный зал, несколько раз сходила на скалолазание и приняла тот факт, что я никогда не буду к этому полностью готова, но, несмотря на страх, я действительно хочу сходить в поход и пора уже наконец решаться. Первый разговор с Костей - основателем и главным гидом Ёлок - окончательно убедил меня в том, что я выбрала правильных людей.
 </p>
-
+<div class="gallery-row">
 <div class="image-container">
   <div>
     <a href="{{ "/img/posts/africa/full/elki_message.png" | relative_url }}" data-lightbox="africa" data-title="Сообщение от Кости">
       <img src="{{ "/img/posts/africa/thumbs/elki_message.png" | relative_url }}" loading="lazy" alt="Первый разговор с основателем турклуба «Ёлки-Моталки»" class="medium-image" />
     </a>
   </div>
+</div>
 </div>
 <span class="caption text-muted">Поддержка и человечность с самого начала 💙</span>
 
@@ -160,6 +163,7 @@ comments: true
     Радость была преждевременной. За следующие пару часов я пережила головокружительный калейдоскоп чувств. Страх, сжимающий за горло, на сложных участках вроде очень узкой тропки над обрывом. Досада и отчаяние, когда на неудачном спуске моя нога соскользнула вниз и я упала, ударившись локтем о камень. Но ярче всего: перекрывающая весь негатив, огромная, заполняющая мое сердце до краев - благодарность. Ведь в каждом сложном месте кто-то помогал мне. На каждом высоком камне, на который я не могла взобраться сама, кто-то подавал руку и вытягивал меня вместе с рюкзаком наверх. Каждую узкую тропку чья-то теплая и крепкая рука держала мою дрожащую от страха ладошку, а успокаивающий голос советовал как и куда ступать. Это были и наши чудесные гиды - Костя и Ирина, и ребята-туристы - такие же участники похода как и я просто с бОльшим опытом, бОльшей смелостью и большИм сердцем.
 </p>
 
+<div class="gallery-row">
 <div class="image-container">
 <div>
     <a href="{{ "/img/posts/africa/full/chain_route_1.jpg" | relative_url }}" data-lightbox="africa" >
@@ -184,13 +188,14 @@ comments: true
 
 
   </div>
+</div>
 
 <span class="caption text-muted">Шутки кончились </span>
 
 <p>
     Так что на эмоциональных американских горках я славно прокатилась еще до того как мы дошли до главного аттракциона первого дня - лестниц на пик Сентинел - места, вселяющего дикий ужас в мою маму, которую угораздило погуглить наш маршрут. Мне и до лестниц хватило приключений, поэтому я просто обреченно шла им навстречу. Даже заметила их не сразу, потому что сначала в глаза бросилось вот это:
 </p>
-
+<div class="gallery-row">
 <div class="image-container">
   <div>
     <a href="{{ "/img/posts/africa/full/near_stairs.png" | relative_url }}" data-lightbox="africa" data-title="Обрыв вблизи лестниц на пик Сентинел">
@@ -198,12 +203,13 @@ comments: true
     </a>
   </div>
 </div>
+</div>
 <span class="caption text-muted">Cюда не лезем</span>
 
 <p>
     Первая мысль - мы будем туда спускаться. Первый порыв - разбежавшись прыгнуть со скалы и прекратить уже эти страдания. А потом я узнала, что вниз мы не лезем, мы лезем вверх по лестницам и чуть не расплакалась от облегчения! Пока мы устроили привал перед восхождением, эти лестницы уверенно покорили две азиатские пенсионерки, совершавшие однодневный хайк к пику Сентинел. Я посмотрела на это и поняла, что на сегодня умирание отменяется.
 </p>
-
+<div class="gallery-row">
 <div class="vertical-image-container">
 
      <div>
@@ -220,13 +226,13 @@ comments: true
 
 
   </div>
-
+</div>
 <span class="caption text-muted">Сюда лезем</span>
 
 <p>
     Вопреки ожиданиям я без особых проблем поднялась по лестницам. На фотографиях они выглядят куда страшнее, чем в жизни. Здесь у тебя всегда 4 точки опоры, поэтому психологически мне было сильно легче, чем до этого. Все-таки 2 месяца в тренажерке сделали свое дело: физически я была готова. Наверху меня одобрительными криками встретили ребята, угостили ирисками, усадили на удобный коврик отдыхать и захвалили вусмерть!  Сидя на вершине, согретая жарким африканским солнцем и теплом окружающих меня людей, я каким-то чудом словила еле живой сигнал сети и успокоила маму:
 </p>
-
+<div class="gallery-row">
 <div class="image-container">
   <div>
     <a href="{{ "/img/posts/africa/full/message_mum.png" | relative_url }}" data-lightbox="africa" data-title="Мама спокойна">
@@ -250,13 +256,13 @@ comments: true
     </a>
   </div>
   </div>
-
+</div>
 <span class="caption text-muted">На фото выглядит круче и страшнее, чем на деле</span>
 
 <p>
     В первую ночь мы разбили лагерь буквально напротив водопада Тугела. <i>“Ну ради таких видов можно и поднапрячься, конечно”</i> - даже внутренняя душнила не смогла поспорить.
 </p>
-
+<div class="gallery-row">
 <div class="image-container">
   <div>
     <a href="{{ "/img/posts/africa/full/tugela_sunset.jpg" | relative_url }}" data-lightbox="africa" data-title="Закат у водопада Тугела">
@@ -272,7 +278,7 @@ comments: true
   </div>
 </div>
 <span class="caption text-muted">Когда выбрал номер с видом на горы</span>
-
+</div>
 <h2 class="section-heading"><u><a href="https://www.youtube.com/watch?v=OpD8cW6zd-0&list=PLwLeX6Pp2FunLbX_EZGEE754l6hcXhHPV&index=3", target="_blank">Audiomachine - Shadowfall</a></u></h2>
 
 <a href="https://maps.app.goo.gl/Yk6x4jrs7WVFsJbq8" target="_blank" style="display: inline-flex; align-items: center; gap: 8px; text-decoration: none;  font-size: 1.2em;">
@@ -283,7 +289,7 @@ comments: true
 <p>
     Кофе, заботливо сваренный Костей аккурат к рассвету, приятно согревает, пока я не отрываясь смотрю на постепенно выползающий из-за горизонта огненный шар. Драконовы горы розовеют под первыми лучами наступающего дня. Это что-то невероятное! Стоит жить, чтобы это увидеть и прочувствовать. Стоит работать, чтобы иметь возможность быть здесь. Стоит быть смелой и делать шаг вперед, чтобы добраться на край света и ощутить себя крошечной песчинкой на фоне этих огромных древних гор, понять какой же мир огромный и удивительный!
 </p>
-
+<div class="gallery-row">
 <div class="vertical-image-container">
 
             <div>
@@ -298,9 +304,10 @@ comments: true
     </a>
   </div>
   </div>
+</div>
 
 <span class="caption text-muted">Королева стиля в этом краю</span>
-
+<div class="gallery-row">
 <div class="image-container">
   <div>
     <a href="{{ "/img/posts/africa/full/tugela_sunrise_2.jpg" | relative_url }}" data-lightbox="africa" data-title="Рассвет у водопада Тугела">
@@ -331,19 +338,20 @@ comments: true
     </a>
   </div>
   </div>
-
+</div>
 <span class="caption text-muted">Слова тут излишни</span>
 
 <p>
     Второй день намного проще: подъемы и спуски не слишком крутые, под ногами преимущественно трава и никаких обрывов. Тугой узел в груди постепенно развязывается, и я начинаю получать удовольствие от происходящего. Подхожу к людям пообщаться, изредка что-то фотографирую, глазею по сторонам.
 </p>
-
+<div class="gallery-row">
 <div class="image-container">
   <div>
     <a href="{{ "/img/posts/africa/full/second_day.jpg" | relative_url }}" data-lightbox="africa" data-title="Рельеф второго дня">
       <img src="{{ "/img/posts/africa/thumbs/second_day.jpg" | relative_url }}" loading="lazy" alt="Поход с турклубом Елки-Моталки по Драконовым горам" class="medium-image" />
     </a>
   </div>
+</div>
 </div>
 <span class="caption text-muted">Рельеф второго дня</span>
 
@@ -381,13 +389,14 @@ comments: true
 <p>
     Над лагерем висит почти осязаемое напряжение. Дождь стал поменьше, но небо обложено тучами со всех сторон и выглядит безнадежно. Ночью одну из палаток подтопило и ребят пришлось расселить в две соседние. У некоторых вчера промокла не только ходовая одежда, но и спальники, и вещи для сна, так что никакого полноценного отдыха не было. На спутниковом коммутаторе Кости неутешительный прогноз: ближайшие 4 дня погода по маршруту еще хуже.
 </p>
-
+<div class="gallery-row">
 <div class="image-container">
   <div>
     <a href="{{ "/img/posts/africa/full/day_3_fog_3.jpg" | relative_url }}" data-lightbox="africa" data-title="Утро третьего дня">
       <img src="{{ "/img/posts/africa/thumbs/day_3_fog_3.jpg" | relative_url }}" loading="lazy" alt="Палаточный лагерь в горах Дракенсберг" class="medium-image" />
     </a>
   </div>
+</div>
 </div>
 <span class="caption text-muted">Когда утро не очень доброе</span>
 
@@ -419,7 +428,7 @@ comments: true
 
 На обратном пути мы щедро делимся с пастухами своей провизией: всё равно её больше, чем мы сможем съесть, да и разгрузить рюкзаки приятно.
 </p>
-
+<div class="gallery-row">
 <div class="image-container">
   <div>
     <a href="{{ "/img/posts/africa/full/shepard_3.jpg" | relative_url }}" data-lightbox="africa" data-title="Местный пастух">
@@ -440,6 +449,7 @@ comments: true
     </a>
   </div>
 </div>
+</div>
 <span class="caption text-muted">Налаживаем международные отношения</span>
 
 <p>
@@ -449,7 +459,7 @@ comments: true
 <p>
     Пока я в очередной раз готовлюсь помирать, лихорадочно верчу головой в попытках сориентироваться и планирую провести ночь прижавшись к ближайшему камню, ребята замечают, что свет моего фонарика поблескивает как-то подозрительно далеко от палаток и смекают, в чем дело. Спасательная операция в лице моей прекрасной соседки Ани выдвигается в мою сторону. Немного поплутав, мы всё-таки находим нашу палатку и забираемся внутрь. Лишь спустя пару часов мне удаётся заснуть и всю ночь мне снятся вариации на тему моего полета с обрыва.
 </p>
-
+<div class="gallery-row">
 <div class="image-container">
   <div>
     <a href="{{ "/img/posts/africa/full/drakensberg_clouds_3.jpg" | relative_url }}" data-lightbox="africa" data-title="Дракенсберг в плену облаков">
@@ -464,6 +474,7 @@ comments: true
     </a>
   </div>
 </div>
+</div>
 <span class="caption text-muted">Добро пожаловать во Silent Tugela Falls</span>
 
 <p>
@@ -474,7 +485,7 @@ comments: true
     Выглядит этот спуск не так ужасно, как тот, где хотелось разбежавшись прыгнуть со скалы, но все равно в голове крутится одна нецензурщина. Ближайшие полтора часа я сконцентрирована на 100%: опасливо лезу по камням за Костей, который подсказывает куда лучше поставить ногу, поддерживает меня за руку на самых сложных участках и добрым спокойным голосом хвалит и говорит, что все отлично получается.
 
 </p>
-
+<div class="gallery-row">
 <div class="vertical-image-container">
 
             <div>
@@ -489,7 +500,7 @@ comments: true
     </a>
   </div>
   </div>
-
+</div>
 <span class="caption text-muted">Сосредоточенно ползем к финишу</span>
 
 <p>
@@ -500,7 +511,7 @@ comments: true
 Интуиция меня не подвела, но и не подготовила к тому, что за такой короткий срок можно так сильно привязаться и проникнуться к людям.
 Пишу это спустя три месяца после возвращения, а в душе до сих пор светло и радостно. 🥹
 </p>
-
+<div class="gallery-row">
 <div class="vertical-image-container">
 
          <div>
@@ -515,7 +526,7 @@ comments: true
     </a>
   </div>
 </div>
-
+</div>
 <span class="caption text-muted">Пару фото об Ирининых творениях</span>
 
 
@@ -545,7 +556,7 @@ comments: true
 
     </p>
 
-
+<div class="gallery-row">
 <div class="vertical-image-container">
   <div>
     <a href="{{ "/img/posts/africa/full/okak.jpg" | relative_url }}" data-lightbox="africa" >
@@ -553,7 +564,7 @@ comments: true
     </a>
   </div>
 </div>
-
+</div>
 <p>
     Мы в цивилизации уже вторые сутки: грязь вымыта из под ногтей, вещи выстираны и в зеркале отражается вполне человеческое обличье. Ближайшие два дня по плану только чилл, релакс и ночная фотоохота на гиппопотама.
 </p>
@@ -566,7 +577,7 @@ comments: true
 На следующий день отправляемся на сафари в национальный парк Хлухлуве-Умфолози, и память телефона пополняется антилопами, зебрами, жирафами и слонами.
 Но гештальт с гиппопотамом всё ещё не закрыт.
 </p>
-
+<div class="gallery-row">
 <div class="vertical-image-container">
 
             <div>
@@ -575,10 +586,10 @@ comments: true
     </a>
   </div>
   </div>
-
+</div>
 <span class="caption text-muted">Африканский латте-арт</span>
 
-
+<div class="gallery-row">
 <div class="image-container">
   <div>
     <a href="{{ "/img/posts/africa/full/safari_1.jpg" | relative_url }}" data-lightbox="africa" data-title="Зебры в парке Хлухлуве-Умфолози">
@@ -601,13 +612,13 @@ comments: true
     </a>
   </div>
   </div>
-
+</div>
 <span class="caption text-muted">Сафари в парке Хлухлуве-Умфолози</span>
 
 <p>
     По законам жанра в последний вечер перед отъездом из Санта-Лючии в групповой чат прилетает сообщение:
 </p>
-
+<div class="gallery-row">
 <div class="vertical-image-container">
   <div>
     <a href="{{ "/img/posts/africa/full/hippo_message.png" | relative_url }}" data-lightbox="africa" data-title="Гиппопотам под отелем!">
@@ -630,7 +641,7 @@ comments: true
     </a>
   </div>
 </div>
-
+</div>
 <span class="caption text-muted">Гиппопотам в городе!</span>
 
 <h2 class="section-heading"><u><a href="https://www.youtube.com/watch?v=kmxPFKIe4Zs&list=PLwLeX6Pp2FunLbX_EZGEE754l6hcXhHPV&index=6", target="_blank">Би-2 & Oxxxymiron - Пора возвращаться домой</a></u></h2>
@@ -648,7 +659,7 @@ comments: true
 Наверху можно гулять довольно долго: на вершине раскинулось широкое плато с множеством ракурсов — и на Кейптаун с береговой линией, и на окружающие его горы.
 </p>
 
-
+<div class="gallery-row">
 <div class="image-container">
   <div>
     <a href="{{ "/img/posts/africa/full/capetowen_sunset_2.jpg" | relative_url }}" data-lightbox="africa" data-title="Закат на Столовой горе">
@@ -672,7 +683,7 @@ comments: true
     </a>
   </div>
 </div>
-
+</div>
 <span class="caption text-muted">Закат на Столовой горе</span>
 
 <p>
@@ -684,7 +695,7 @@ comments: true
 
 Я изо всех сил вцепляюсь в эти драгоценные моменты: вид на горную цепь Двенадцати Апостолов в модном районе Camps Bay, потешно семенящие пингвины на Boulders Beach, мощный, нескончаемый ветер на мысе Доброй Надежды. А фоном ко всему — смех, искренние разговоры, улыбки, дурачества и очень-очень много тепла.
 </p>
-
+<div class="gallery-row">
 <div class="image-container">
   <div>
     <a href="{{ "/img/posts/africa/full/12_apostols.jpg" | relative_url }}" data-lightbox="africa" data-title="Вид на горную гряду Двенадцать апостолов с района Camps Bay">
@@ -735,7 +746,7 @@ comments: true
     </a>
   </div>
 </div>
-
+</div>
 <span class="caption text-muted">Фотокарточка на память ❤️</span>
 
 
@@ -744,7 +755,7 @@ comments: true
 
 Все одиннадцать часов в воздухе я просто слушаю музыку и смотрю в окно. Нет желания ни читать, ни болтать, ни включать кино. Внутри — слишком много чувств и впечатлений, которые того гляди и высплеснутся через край.
 </p>
-
+<div class="gallery-row">
 <div class="vertical-image-container">
 
             <div>
@@ -753,7 +764,7 @@ comments: true
     </a>
   </div>
   </div>
-
+</div>
 <span class="caption text-muted">До свидания, Кейптаун</span>
 
 <p>
