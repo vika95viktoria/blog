@@ -32,6 +32,7 @@ Gemfile.lock
 .idea/**/dynamic.xml
 .idea/**/uiDesigner.xml
 .idea/**/dbnavigator.xml
+/.idea/inspectionProfiles/
 
 # Gradle
 .idea/**/gradle.xml
