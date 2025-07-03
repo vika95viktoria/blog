@@ -9,56 +9,6 @@ date: 2025-06-17 12:15:13 +0200
 background: '/img/posts/nvdv/nvdv_background.jpg'
 comments: true
 ---
-<style>
-.image-container {
-    width: 100%; /* Full width of its parent */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden; /* Ensures no unwanted cropping */
-}
-
-.image-container img {
-    width: 100%; /* Fully responsive */
-    max-width: 100%; /* Prevents exceeding natural size */
-    height: auto; /* Maintains aspect ratio */
-    border-radius: 10px; /* Optional rounded corners */
-}
-
-/* New class for vertical images */
-.vertical-image-container {
-    width: 100%;
-    max-width: 500px; /* Adjust this value based on your needs */
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.vertical-image-container img {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-}
-
-/* Media query for mobile devices */
-@media (max-width: 768px) {
-    .vertical-image-container {
-        max-width: 90%; /* Takes up most of the screen width on mobile */
-    }
-}
-
-.image-container, .vertical-image-container {
-    cursor: pointer;
-}
-
-.image-container img:hover, .vertical-image-container img:hover {
-    opacity: 0.9;
-    transition: opacity 0.3s ease-in-out;
-}
-
-
-</style>
 
 <p>
     В середине марта великий и могучий таргет инстаграма подбросил мне фотку, на которой толпа людей в ярких жилетах бодро куда-то шагает на фоне рассвета, а снизу написано Nacht van de Vlugteling. Наконец-то после призывов купить хату в Дубае, инвестировать в крипту и сделать ноготочки эта шайтан машина раскусила меня. Попала в самое сердечко, потому что ходить пешком <a href="https://www.youtube.com/watch?v=Tso32OBqjRc" target="_blank"> я люблю ЖЭСТАЧАЙШЭ</a>. Я заглотила крючок, перешла по ссылке и увидела совсем не то, что ожидала.
@@ -70,8 +20,8 @@ comments: true
 
 <div class="image-container">
   <div>
-    <a href="{{ "/img/posts/nvdv/nvdv_main_image.jpg" | relative_url }}" data-lightbox="nvdv" data-title="Этим меня и заманили">
-      <img src="{{ "/img/posts/nvdv/nvdv_main_image.jpg" | relative_url }}" alt="Nacht van de Vlugteling" class="medium-image" />
+    <a href="{{ "/img/posts/nvdv/full/nvdv_main_image.jpg" | relative_url }}" data-lightbox="nvdv" data-title="Этим меня и заманили">
+      <img src="{{ "/img/posts/nvdv/thumbs/nvdv_main_image.jpg" | relative_url }}" alt="Nacht van de Vlugteling" class="medium-image" />
     </a>
   </div>
 </div>
@@ -101,8 +51,8 @@ comments: true
 <div class="image-container">
 
       <div>
-    <a href="{{ "/img/posts/nvdv/route.PNG" | relative_url }}" data-lightbox="nvdv" data-title="Маршрут ночной прогулки">
-      <img src="{{ "/img/posts/nvdv/route.PNG" | relative_url }}" alt="Маршрут ночной прогулки" class="medium-image" />
+    <a href="{{ "/img/posts/nvdv/full/route.PNG" | relative_url }}" data-lightbox="nvdv" data-title="Маршрут ночной прогулки">
+      <img src="{{ "/img/posts/nvdv/thumbs/route.PNG" | relative_url }}" alt="Маршрут ночной прогулки" class="medium-image" />
     </a>
   </div>
   </div>
@@ -120,8 +70,8 @@ comments: true
 <div class="vertical-image-container">
 
      <div>
-    <a href="{{"/img/posts/nvdv/me_start.jpg" | relative_url}}" data-lightbox="nvdv" data-title="Начало прогулки">
-      <img src="{{"/img/posts/nvdv/me_start_full.jpg" | relative_url}}" alt="Начало прогулки" class="small-image" />
+    <a href="{{"/img/posts/nvdv/full/me_start.jpg" | relative_url}}" data-lightbox="nvdv" data-title="Начало прогулки">
+      <img src="{{"/img/posts/nvdv/thumbs/me_start.jpg" | relative_url}}" alt="Начало прогулки" class="small-image portrait-limit" />
     </a>
   </div>
 
@@ -136,8 +86,8 @@ comments: true
 <div class="image-container">
 
      <div>
-    <a href="{{ "/img/posts/nvdv/arrow.jpg" | relative_url }}" data-lightbox="nvdv" data-title="Указатели на маршруте">
-      <img src="{{ "/img/posts/nvdv/arrow_full.jpg" | relative_url }}" alt="Указатели на маршруте" class="medium-image" />
+    <a href="{{ "/img/posts/nvdv/full/arrow.jpg" | relative_url }}" data-lightbox="nvdv" data-title="Указатели на маршруте">
+      <img src="{{ "/img/posts/nvdv/thumbs/arrow.jpg" | relative_url }}" alt="Указатели на маршруте" class="medium-image" />
     </a>
   </div>
 
@@ -160,8 +110,8 @@ comments: true
 <div class="vertical-image-container">
 
          <div>
-    <a href="{{ "/img/posts/nvdv/halfway.jpg" | relative_url }}" data-lightbox="nvdv" data-title="Середина прогулки">
-      <img src="{{ "/img/posts/nvdv/halfway_full.jpg" | relative_url }}" alt="Середина прогулки" class="small-image" />
+    <a href="{{ "/img/posts/nvdv/full/halfway.jpg" | relative_url }}" data-lightbox="nvdv" data-title="Середина прогулки">
+      <img src="{{ "/img/posts/nvdv/thumbs/halfway.jpg" | relative_url }}" alt="Середина прогулки" class="small-image portrait-limit" />
     </a>
   </div>
   </div>
@@ -174,8 +124,8 @@ comments: true
 <div class="image-container">
 
     <div>
-    <a href="{{ "/img/posts/nvdv/field_1.jpg" | relative_url }}" data-lightbox="nvdv" data-title="Пейзаж на маршруте">
-      <img src="{{ "/img/posts/nvdv/field_1_full.jpg" | relative_url }}" alt="Пейзаж на маршруте" class="medium-image" />
+    <a href="{{ "/img/posts/nvdv/full/field_1.jpg" | relative_url }}" data-lightbox="nvdv" data-title="Пейзаж на маршруте">
+      <img src="{{ "/img/posts/nvdv/thumbs/field_1.jpg" | relative_url }}" alt="Пейзаж на маршруте" class="medium-image" />
     </a>
   </div>
 
@@ -185,8 +135,8 @@ comments: true
 <div class="image-container">
 
         <div>
-    <a href="{{ "/img/posts/nvdv/me_field.jpg" | relative_url }}" data-lightbox="nvdv" data-title="Прохождение маршрута">
-      <img src="{{ "/img/posts/nvdv/me_field_full.jpg" | relative_url }}" alt="Прохождение маршрута" class="medium-image" />
+    <a href="{{ "/img/posts/nvdv/full/me_field.jpg" | relative_url }}" data-lightbox="nvdv" data-title="Прохождение маршрута">
+      <img src="{{ "/img/posts/nvdv/thumbs/me_field.jpg" | relative_url }}" alt="Прохождение маршрута" class="medium-image" />
     </a>
   </div>
 
@@ -202,14 +152,13 @@ comments: true
     На финише мне вручили медальку, я выпила уже четвёртый кофе за эту ночь и отправилась домой. Ноги гудели, но всё-таки без особых проблем донесли меня до вокзала. В целом, я вышла из этого приключения без потерь: ни мозолей, ни травм, ни неприятных впечатлений. Уже к вечеру я пришла в себя и отправилась на свою стандартную воскресную прогулку, где нагуляла еще 8 тысяч шагов сверху.
 </p>
 
-<div>
 <div class="row">
 
 <div class="col-lg-6 col-md-4 col-xs-4 ">
 
             <div>
-    <a href="{{ "/img/posts/nvdv/me_een_kilometer.jpg" | relative_url}}" data-lightbox="nvdv" data-title="Последний километр Nacht van de Vlugteling">
-      <img class="img-fluid" decoding="async" loading="lazy" src="{{ "/img/posts/nvdv/me_een_kilometer_full.jpg" | relative_url }}" alt="Последний километр Nacht van de Vlugteling" class="small-image" />
+    <a href="{{ "/img/posts/nvdv/full/me_een_kilometer.jpg" | relative_url}}" data-lightbox="nvdv" data-title="Последний километр Nacht van de Vlugteling">
+      <img class="img-fluid" decoding="async" loading="lazy" src="{{ "/img/posts/nvdv/thumbs/me_een_kilometer.jpg" | relative_url }}" alt="Последний километр Nacht van de Vlugteling" class="small-image" />
     </a>
   </div>
 
@@ -217,15 +166,14 @@ comments: true
 <div class="col-lg-6 col-md-4 col-xs-4 ">
 
                 <div>
-    <a href="{{ "/img/posts/nvdv/me_medal.jpg" | relative_url}}" data-lightbox="nvdv" data-title="Финиш и медаль">
-      <img class="img-fluid" decoding="async" loading="lazy" src="{{ "/img/posts/nvdv/me_medal_full.jpg" | relative_url }}" alt="Финиш и медаль" class="small-image" />
+    <a href="{{ "/img/posts/nvdv/full/me_medal.jpg" | relative_url}}" data-lightbox="nvdv" data-title="Финиш и медаль">
+      <img class="img-fluid" decoding="async" loading="lazy" src="{{ "/img/posts/nvdv/thumbs/me_medal.jpg" | relative_url }}" alt="Финиш и медаль" class="small-image" />
     </a>
   </div>
 
 </div>
 
 </div>
-<div class="center-block">
 <span class="caption text-muted">Нагулялась и сидит довольная</span>
 
 <p>

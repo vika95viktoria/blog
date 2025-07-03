@@ -9,108 +9,7 @@ date: 2025-02-28 15:15:13 +0100
 background: '/img/posts/rijschool/cars_dramatic.webp'
 comments: true
 ---
-<style>
-.image-container {
-    width: 100%; /* Full width of its parent */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden; /* Ensures no unwanted cropping */
-}
 
-.image-container img {
-    width: 100%; /* Fully responsive */
-    max-width: 100%; /* Prevents exceeding natural size */
-    height: auto; /* Maintains aspect ratio */
-    border-radius: 10px; /* Optional rounded corners */
-}
-
-     .small-image {
-    max-width: 400px; /* Adjust as needed */
-    height: auto; /* Maintain aspect ratio */
-    display: block; /* Remove extra spacing */
-    border-radius: 10px; /* Optional: rounded corners */
-}
-
-     .medium-image {
-    max-width: 800px; /* Adjust as needed */
-    height: auto; /* Maintain aspect ratio */
-    display: block; /* Remove extra spacing */
-    border-radius: 10px; /* Optional: rounded corners */
-}
-
-     /* Carousel Container */
-        .carousel {
-            position: relative;
-            width: 100%;
-            max-width: 900px;
-            margin: 20px auto;
-            overflow: hidden;
-            border-radius: 10px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-        }
-
-        /* Images Wrapper */
-        .carousel-images {
-            display: flex;
-            transition: transform 0.5s ease-in-out;
-        }
-
-        /* Individual Image */
-        .carousel-images img {
-            width: 100%;
-            height: auto;
-            flex: 0 0 100%;
-            border-radius: 10px;
-        }
-
-        /* Dots Navigation */
-        .carousel-dots {
-            text-align: center;
-            margin-top: 10px;
-        }
-
-        .dot {
-            display: inline-block;
-            width: 12px;
-            height: 12px;
-            margin: 5px;
-            background-color: #bbb;
-            border-radius: 50%;
-            cursor: pointer;
-            transition: background-color 0.3s;
-        }
-
-        .dot.active {
-            background-color: #333;
-        }
-
-                /* Navigation Buttons */
-        .carousel-button {
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            background-color: rgba(0, 0, 0, 0.5);
-            color: white;
-            border: none;
-            padding: 10px;
-            cursor: pointer;
-            border-radius: 50%;
-            font-size: 18px;
-        }
-
-        .carousel-button:hover {
-            background-color: rgba(0, 0, 0, 0.8);
-        }
-
-        .prev {
-            left: 10px;
-        }
-
-        .next {
-            right: 10px;
-        }
-</style>
 
 <h2 class="section-heading">Начало</h2>
 
@@ -153,7 +52,7 @@ comments: true
             <div class="d-flex justify-content-center">
 
    <div>
-      <img src="{{"/img/posts/rijschool/first_lesson.jpg" | relative_url}}" alt="Первый урок по вождению"  class="small-image" />
+      <img src="{{"/img/posts/rijschool/first_lesson.jpg" | relative_url}}" alt="Первый урок по вождению"  class="small-image portrait-limit" />
     </a>
   </div>
   </div>
@@ -195,7 +94,7 @@ comments: true
             <div class="d-flex justify-content-center">
 
    <div>
-      <img src="{{"/img/posts/rijschool/golf.jpg" | relative_url}}" alt="Машина первого инструктора"  class="small-image" />
+      <img src="{{"/img/posts/rijschool/golf.jpg" | relative_url}}" alt="Машина первого инструктора"  class="small-image portrait-limit" />
     </a>
   </div>
   </div>

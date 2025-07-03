@@ -33,6 +33,138 @@ layout: default
   }
 }
 
+.image-container, .vertical-image-container {
+    width: 100%; /* Full width of its parent */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    overflow: hidden; /* Ensures no unwanted cropping */
+}
+
+.image-container img {
+    width: 100%; /* Fully responsive */
+    max-width: 100%; /* Prevents exceeding natural size */
+    height: auto; /* Maintains aspect ratio */
+    border-radius: 10px; /* Optional rounded corners */
+}
+
+.gallery-row{
+  display:flex;         /* turns on flexbox */
+  flex-direction:column;/* column flow  ➜ one on top of the other */
+  gap:12px;             /* space between the two blocks */
+  align-items:center;   /* (optional) centre them horizontally */
+}
+
+.vertical-image-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+
+@media (max-width: 768px){
+  .image-container,
+  .vertical-image-container{
+    max-width: 90%;    /* or 100 % if you don’t need the inset */
+  }
+}
+
+/* let every direct child of either container fill the space */
+.image-container > div,
+.vertical-image-container > div {
+    flex: 1 1 0;   /* may also use width:100% if you prefer */
+}
+
+.image-container, .vertical-image-container {
+    cursor: pointer;
+}
+
+.image-container img:hover, .vertical-image-container img:hover {
+    opacity: 0.9;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.portrait-limit {
+    width: auto;          /* cancel the 100 % width */
+    max-height: 80vh;     /* never exceed 80 % of the viewport height */
+    max-width: 100%;      /* still don’t let it escape its column */
+    height: auto;         /* keep the aspect ratio */
+    object-fit: contain;  /* (optional) makes sure it’s never cropped */
+}
+
+ /* Carousel Container */
+.carousel {
+    position: relative;
+    width: 100%;
+    max-width: 900px;
+    margin: 20px auto;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Images Wrapper */
+.carousel-images {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+/* Individual Image */
+.carousel-images img {
+    width: 100%;
+    height: auto;
+    flex: 0 0 100%;
+    border-radius: 10px;
+}
+
+/* Dots Navigation */
+.carousel-dots {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.dot {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    margin: 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.dot.active {
+    background-color: #333;
+}
+
+        /* Navigation Buttons */
+.carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    font-size: 18px;
+}
+
+.carousel-button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
 </style>
 
 <!-- Page Header -->
